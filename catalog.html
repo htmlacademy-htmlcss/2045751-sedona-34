@@ -19,7 +19,7 @@
               <a class="nav__link" href="#">О Седоне</a>
             </li>
             <li class="nav__item nav__item-active">
-              <a class="nav__link" href="catalog.html">Гостиницы</a>
+              <a class="nav__link">Гостиницы</a>
             </li>
           </ul>
           <ul class="nav__list nav__list-user">
@@ -43,7 +43,7 @@
 
     <main class="catalog">
       <header class="catalog__header">
-        <div class="catalog__header-container">
+        <div class="catalog__header-content">
           <h1 class="catalog__header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
@@ -52,62 +52,75 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">
+              <a class="breadcrumbs-link">
                 Гостиницы
               </a>
             </li>
           </ul>
-          <form class="catalog__header-form" action="#" method="get">
-            <fieldset class="catalog__header-field catalog__header-infrastructure">
-              <legend class="catalog__header-legend">Инфраструктура:</legend>
-              <ul class="catalog__header-list">
-                <li class="catalog__header-item">
-                  <label class="catalog__header-label">
-                    <input class="catalog__header-input" name="pool" type="checkbox" checked>
+          <form class="filters" action="#" method="">
+            <fieldset class="filters-controls filters-infrastructure">
+              <legend class="filters-legend">Инфраструктура:</legend>
+              <ul class="filters-list">
+                <li class="filters-item">
+                  <label class="filters-label">
+                    <input class="filters-input" name="pool" type="checkbox" checked>
                     Бассейн
                   </label>
                 </li>
-                <li class="catalog__header-item">
-                  <label class="catalog__header-label">
-                    <input class="catalog__header-input" name="parking" type="checkbox" checked>
+                <li class="filters-item">
+                  <label class="filters-label">
+                    <input class="filters-input" name="parking" type="checkbox" checked>
                     Парковка
                   </label>
                 </li>
-                <li class="catalog__header-item">
-                  <label class="catalog__header-label">
-                    <input class="catalog__header-input" name="wi-fi" type="checkbox">
-                   Wi-Fi
+                <li class="filters-item">
+                  <label class="filters-label">
+                    <input class="ilters-input" name="wi-fi" type="checkbox">
+                    Wi-Fi
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog__header-field catalog__header-type-housing">
-              <legend class="catalog__header-legend">Тип жилья:</legend>
-              <ul class="catalog__header-list">
-                <li class="catalog__header-item">
-                  <label class="catalog__header-label">
-                    <input class="catalog__header-input" name="type-housing" type="radio" checked>
+            <fieldset class="filters-controls filters-type-housing">
+              <legend class="filters-legend">Тип жилья:</legend>
+              <ul class="filters-list">
+                <li class="filters-item">
+                  <label class="filters-label">
+                    <input class="filters-input" name="type-housing" type="radio" checked>
                     Гостиница
                   </label>
                 </li>
-                <li class="catalog__header-item">
-                  <label class="catalog__header-label">
-                    <input class="catalog__header-input" name="type-housing" type="radio">
+                <li class="filters-item">
+                  <label class="filters-label">
+                    <input class="filters-input" name="type-housing" type="radio">
                     Мотель
                   </label>
                 </li>
-                <li class="catalog__header-item">
-                  <label class="catalog__header-label">
-                    <input class="catalog__header-input" name="type-housing" type="radio">
+                <li class="filters-item">
+                  <label class="filters-label">
+                    <input class="filters-input" name="type-housing" type="radio">
                     Апартаменты
                   </label>
                 </li>
               </ul>
             </fieldset>
-
+            <fieldset class="filters-controls filters-price">
+              <legend class="filters-legend">Стоимость, ₽:</legend>
+              <input class="filters-price" id="price-from" type="text" value="0">
+              <label class="filters-label" for="price-from">от</label>
+              <input class="filters-price" id="price-to" type="text" value="9000">
+              <label class="filters-label" for="price-to">до</label>
+              <input class="filters-range" type="range" min="0" max="9000" step="1">
+              <button class="filters-button" type="button">Применить</button>
+              <input class="filters-reset" type="reset">
+            </fieldset>
           </form>
         </div>
       </header>
+
+      <div class="catalog__hotels">
+
+      </div>
     </main>
 
     <footer class="page-footer">
