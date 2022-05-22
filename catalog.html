@@ -9,7 +9,7 @@
       <div class="page-header__container container">
         <nav class="nav">
           <a class="page-header__logo-link" href="#">
-            <img class="page-header__logo-img" src="" alt="Логотип сайта Седона" width="" height="">
+            <img class="page-header__logo-img" src="test.png" alt="Логотип сайта Седона" width="" height="">
           </a>
           <ul class="nav__list">
             <li class="nav__item">
@@ -118,9 +118,35 @@
         </div>
       </header>
 
-      <div class="catalog__hotels">
-
-      </div>
+      <section class="catalog__hotels">
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <div class="catalog__hotels-content">
+          <p class="catalog__hotels-text">
+            Найдено гостиниц: <output>38</output>
+          </p>
+          <select class="catalog__hotels-sort" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <a class="catalog__hotels-view" href="#">
+            <span class="visually-hidden">Показать содержимое карточками</span>
+          </a>
+          <a class="catalog__hotels-view" href="#">
+            <span class="visually-hidden">Показать содержимое крупно</span>
+          </a>
+          <a class="catalog__hotels-view" href="#">
+            <span class="visually-hidden">Показать содержимое списком</span>
+          </a>
+          <ul class="catalog__hotels-list">
+            <li class="catalog__hotels-item">
+              <a class="catalog__hotels-link" href="#">
+                <img class="catalog__hotels-img" src="test.png" alt="Изображение отеля">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -154,5 +180,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
