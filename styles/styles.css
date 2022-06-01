@@ -1,3 +1,5 @@
+
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -75,6 +77,14 @@
   text-align: center;
 }
 
+.reasons__title {
+  text-align: center;
+}
+
+.reasons__description {
+  text-align: center;
+}
+
 .reasons__row {
   background-color: #82B3D3;
   background-image: url(../images/reason-1-background.jpg);
@@ -106,4 +116,29 @@
   color: #ffffff;
   padding-top: 92px;
   padding-bottom: 92px;
+}
+
+.reasons__row-reverse {
+  background-color: #82B3D3;
+  background-image: url(../images/reason-2-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: 0 0;
+}
+
+.reasons__row-blue-reverse {
+  margin-left: auto;
+}
+
+
+.subscribe {
+  background-image: url(../images/subscribe-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe__content {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }

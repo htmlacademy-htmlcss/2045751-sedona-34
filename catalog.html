@@ -2,26 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__container container">
-        <nav class="nav">
-          <a class="page-header__logo-link" href="#">
-            <img class="page-header__logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
-          </a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">О Седоне</a>
-            </li>
-            <li class="nav__item nav__item-active">
-              <a class="nav__link">Гостиницы</a>
-            </li>
-          </ul>
+
+   <header class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <div class="page-header__logo">
+            <a class="page-header__logo-link" href="#">
+              <img class="page-header__logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item-active">
+                <a class="nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О Седоне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="nav__list nav__list-user">
             <li class="nav__item">
               <a class="nav__link" href="#">
@@ -33,11 +40,11 @@
                 <span class="visually-hidden">Поставить лайк</span>
               </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Кнопка</a>
+            <li class="nav__item nav__item-user">
+              <a class="nav__link nav__link-button" href="#">Кнопка</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
 
