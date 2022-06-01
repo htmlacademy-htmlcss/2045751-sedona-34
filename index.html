@@ -2,26 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Седона</title>
   </head>
   <body>
+
     <header class="page-header">
-      <div class="page-header__container container">
-        <nav class="nav">
-          <a class="page-header__logo-link" href="#">
-            <img class="page-header__logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
-          </a>
-          <ul class="nav__list">
-            <li class="nav__item nav__item-active">
-              <a class="nav__link">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">О Седоне</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="page-header__content">
+          <div class="page-header__logo">
+            <a class="page-header__logo-link" href="#">
+              <img class="page-header__logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item-active">
+                <a class="nav__link">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О Седоне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="nav__list nav__list-user">
             <li class="nav__item">
               <a class="nav__link" href="#">
@@ -33,17 +40,19 @@
                 <span class="visually-hidden">Поставить лайк</span>
               </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Кнопка</a>
+            <li class="nav__item nav__item-user">
+              <a class="nav__link nav__link-button" href="#">Кнопка</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
 
     <section class="promo">
-      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="promo__img" src="images/welcome-sedona.svg" width="458" height="352" alt="Надпись в виде картинки добро пожаловать в Седону">
+      <div class="promo__content">
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+        <img class="promo__img" src="images/welcome-sedona.svg" width="458" height="352" alt="Надпись в виде картинки добро пожаловать в Седону">
+      </div>
     </section>
 
     <section class="reasons">
@@ -55,15 +64,13 @@
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
       </p>
       <div class="reasons__row">
+        <span class="visually-hidden">Фото городка Седона</span>
         <div class="reasons__row-blue reason">
           <h2 class="reasons__row-title">Настоящий <br>городок</h2>
           <p class="reasons__row-number">&ndash; №1 &ndash;</p>
           <p class="reasons__row-text">
             Седона &ndash; не аттракцион для<br> туристов, там течёт своя<br> жизнь
           </p>
-        </div>
-        <div class="reasons__row-photo">
-          <span class="visually-hidden">Фото городка Седона</span>
         </div>
       </div>
       <div class="recommendations">
@@ -147,7 +154,7 @@
     </section>
 
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="container">
         <div class="socials">
           <ul class="socials__list">
             <li class="socials__item">
