@@ -2,6 +2,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -9,6 +10,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -18,45 +20,51 @@ body {
   font-size: 18px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
-  border: 1px solid red;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.page-header__content {
-  border: 1px solid blue;
-  display: flex;
-  align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 .nav__list {
-  border: 1px solid blue;
   margin: 0;
   padding: 0;
-  margin-left: 30px;
-  width: 390px;
-  display: flex;
-  list-style-type: none;
-}
-
-.nav__list li:first-child a{
-  padding-left: 17px;
+  list-style: none;
 }
 
 .nav__link {
-  padding-left: 34px;
   text-decoration: none;
   color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.nav__link-button {
+  background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 9px 50px;
 }
 
 .promo {
   background-image: url(../images/main-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  position: relative;
 }
 
 .promo__content {
@@ -64,16 +72,116 @@ body {
 }
 
 .reasons__title {
+  font-weight: 700px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .reasons__description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
+  color: #333333;
 }
 
 .reasons__row {
   background-color: #82B3D3;
+  background-image: url(../images/reason-1-background.jpg);
   background-repeat: no-repeat;
+  background-size: 800px auto;
+  background-position: right top;
+}
+
+.reasons__row-blue {
+  width: 230px;
+  margin-left: 85px;
+  margin-right: 85px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.reasons__row-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.reasons__row-number {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.reasons__row-text {
+  margin: 0;
+}
+
+.reasons__row-reverse {
+  background-color: #82B3D3;
+  background-image: url(../images/reason-2-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+  background-position: left top;
+}
+
+.reasons__row-blue-reverse {
+  margin-left: auto;
+}
+
+.reasons__squares-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reasons__squares-item {
+  width: 400px;
+}
+
+.reasons__squares--lighter {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reasons__squares--light {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.search__content {
+  text-align: center;
+}
+
+.search__caption {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.search__link {
+  background-color: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 17px 149px;
 }
 
 .subscribe {
@@ -83,7 +191,51 @@ body {
 }
 
 .subscribe__content {
-  width: 600px;
-  margin: 0 auto;
   text-align: center;
+}
+
+.subscribe__caption {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.subscribe__form-submit {
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px 34px;
+  cursor: pointer;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.address {
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 40px;
+}
+
+.address__link {
+  text-decoration: none;
+  color: #000000;
 }
