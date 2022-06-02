@@ -18,6 +18,7 @@ body {
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .visually-hidden {
@@ -54,6 +55,7 @@ body {
 
 .nav__link-button {
   background-color: #756157;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -190,6 +192,10 @@ body {
   background-size: 100% auto;
 }
 
+.subscribe-white {
+  background-image: none;
+}
+
 .subscribe__content {
   text-align: center;
 }
@@ -202,11 +208,18 @@ body {
   color: #ffffff;
 }
 
+.subscribe__caption-white {
+  color: #000000;
+}
 .subscribe__text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+}
+
+.subscribe__text-white {
+  color: #333333;
 }
 
 .subscribe__form-submit {
@@ -238,4 +251,115 @@ body {
 .address__link {
   text-decoration: none;
   color: #000000;
+}
+
+.catalog {
+  background-image: url(../images/catalog-hotels/catalog-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.catalog__header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.filters-controls {
+  border: none;
+}
+
+.filters-legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.filters-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
+}
+
+.catalog__hotels-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__hotels-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog__hotels-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog__hotels-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.rating-result {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.catalog__hotels-button {
+  background-color:#82B3D3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 9px 20px;
+}
+
+.catalog__hotels-more {
+  background-color: #756157;
+}
+
+.catalog__hotels-favourites {
+  background-color: #82B3D3;
+}
+
+.rating-stars-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
