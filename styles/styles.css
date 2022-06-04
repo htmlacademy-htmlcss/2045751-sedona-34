@@ -64,6 +64,7 @@ body {
 }
 
 .promo {
+  background-color: #82B3D3;
   background-image: url(../images/main-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -187,6 +188,8 @@ body {
 }
 
 .subscribe {
+  color: #ffffff;
+  background-color: #82B3D3;
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -253,13 +256,16 @@ body {
   color: #000000;
 }
 
-.catalog {
+.catalog__header {
+  color: #ffffff;
+  background-color: #82B3D3;
   background-image: url(../images/catalog-hotels/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
 .catalog__header-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -362,4 +368,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.subscribe-white {
+  background-color: #ffffff;
 }
