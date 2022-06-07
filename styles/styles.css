@@ -41,8 +41,8 @@ body {
   margin: 0 auto;
 }
 
-.page-header__content {
-  display: flex;
+.page-header__logo {
+  margin-right: 30px;
 }
 
 .nav__list {
@@ -59,32 +59,9 @@ body {
   line-height: 26px;
 }
 
-.nav__list-user {
-  outline: 1px solid red;
-  display: flex;
-  width: 264px;
-}
-
-.nav__user-icons {
-  outline: 1px solid blue;
-  width: 42px;
-}
-
-.nav__user-search {
-  background-image: url(../images/search.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.nav__user-favorite {
-  background-image: url(../images/favorite.svg);
-  background-repeat: no-repeat;
-  margin-right: auto;
-  background-position: 50% 50%;
-}
-
 .nav__user-button {
   align-self: center;
+  margin-left: auto;
 }
 
 .nav__link-button {
