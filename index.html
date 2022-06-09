@@ -11,7 +11,7 @@
       <div class="container">
         <div class="page-header__content">
           <div class="page-header__logo">
-            <a class="page-header__logo-link" href="#">
+            <a class="page-header__logo-link">
               <img class="page-header__logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
             </a>
           </div>
@@ -49,114 +49,134 @@
       </div>
     </header>
 
-    <section class="promo">
-      <div class="promo__content">
-        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="promo__img" src="images/welcome-sedona.svg" width="458" height="352" alt="Надпись в виде картинки добро пожаловать в Седону">
-      </div>
-    </section>
+    <main class="main-container">
+      <section class="promo">
+        <div class="promo__content">
+          <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+          <img class="promo__img" src="images/welcome-sedona.svg" width="458" height="352" alt="Надпись в виде картинки добро пожаловать в Седону">
+        </div>
+        <div class="promo__decoration"></div>
+      </section>
 
-    <section class="reasons">
-      <h1 class="reasons__title">
-        Седона — небольшой городок в Аризоне,<br>
-        заслуживающий большего!
-      </h1>
-      <p class="reasons__description">
-        Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-      </p>
-      <div class="reasons__row">
-        <span class="visually-hidden">Фото городка Седона</span>
-        <div class="reasons__row-blue">
-          <h2 class="reasons__row-title">Настоящий <br>городок</h2>
-          <p class="reasons__row-number">&ndash; №1 &ndash;</p>
-          <p class="reasons__row-text">
-            Седона &ndash; не аттракцион для<br> туристов, там течёт своя<br> жизнь
-          </p>
-        </div>
-      </div>
-      <div class="recommendations">
-        <ul class="recommendations__list">
-          <li class="recommendations__item">
-            <p class="recommendations__home">Жилье</p>
-            <p class="recommendations__text">
-              Рекомендуем пожить<br> в настоящем мотеле,<br>всё как в кино!
-            </p>
-          </li>
-          <li class="recommendations__item">
-            <p class="recommendations__food">Еда</p>
-            <p class="recommendations__text">
-              Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
-            </p>
-          </li>
-          <li class="recommendations__item">
-            <p class="recommendations__food">Сувениры</p>
-            <p class="recommendations__text">
-              Не только китайского,<br> но и настоящего местного<br> производства!
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="reasons__row reasons__row-reverse">
-        <div class="reasons__row-blue reasons__row-blue-reverse">
-          <h2 class="reasons__row-title">Там есть<br> мост дьявола</h2>
-          <p class="reasons__row-number">&ndash; №2 &ndash;</p>
-          <p class="reasons__row-text">
-            Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется
-          </p>
-        </div>
-        <div class="reasons__row-photo">
-          <span class="visually-hidden">Фото Гранд-Каньона</span>
-        </div>
-      </div>
-      <div class="reasons__squares">
-        <ul class="reasons__squares-list">
-          <li class="reasons__squares-item reasons__squares--lighter">
-            <h2 class="reasons__row-title">Небольшая <br>площадь</h2>
-            <p class="reasons__row-number">&ndash; №3 &ndash;</p>
-            <p class="reasons__row-text">
-              Все достопримечательности<br> находятся очень близко
-            </p>
-          </li>
-          <li class="reasons__squares-item reasons__squares--light">
-            <h2 class="reasons__row-title">Красивая <br>дорога</h2>
-            <p class="reasons__row-number">&ndash; №4 &ndash;</p>
-            <p class="reasons__row-text">
-              Ехать в Седону из Лас-Вегаса<br> совсем не скучно!
-            </p>
-          </li>
-          <li class="reasons__squares-item reasons__squares--lighter">
-            <h2 class="reasons__row-title">Мало <br>туристов</h2>
-            <p class="reasons__row-number">&ndash; №4 &ndash;</p>
-            <p class="reasons__row-text">
-              Большинство едет в Гранд<br> Каньон и толпится там
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="search">
-      <div class="search__content">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <p class="search__caption">Заинтересовались?</p>
-        <p class="search__text">Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в Седоне
+      <section class="reasons">
+        <h1 class="reasons__title">
+          Седона — небольшой городок в Аризоне,<br>
+          заслуживающий большего!
+        </h1>
+        <p class="reasons__description">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
-        <a class="search__link" href="#">Поиск гостиницы в Седоне</a>
-      </div>
-    </section>
+        <div class="reasons__row">
+          <div class="container">
+            <div class="reasons__row-content">
+              <div class="reasons__row-blue">
+                <h2 class="reasons__row-title">Настоящий <br>городок</h2>
+                <p class="reasons__row-number">&ndash; №1 &ndash;</p>
+                <p class="reasons__row-text">
+                  Седона &ndash; не аттракцион для<br> туристов, там течёт своя<br> жизнь
+                </p>
+              </div>
+              <div class="reasons__row-photo">
+                <span class="visually-hidden">Фото городка Седона</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommendations">
+          <div class="container">
+            <ul class="recommendations__list">
+              <li class="recommendations__item recommendations__item--light">
+                <div class="recommendations__icon recommendations__icon-housing"></div>
+                <h2 class="recommendations__title">Жилье</h2>
+                <p class="recommendations__text">
+                  Рекомендуем пожить<br> в настоящем мотеле,<br>всё как в кино!
+                </p>
+              </li>
+              <li class="recommendations__item recommendations__item--white">
+                <div class="recommendations__icon recommendations__icon-food"></div>
+                <h2 class="recommendations__title">Еда</h2>
+                <p class="recommendations__text">
+                  Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="recommendations__item recommendations__item--light">
+                <div class="recommendations__icon recommendations__icon-souvenirs"></div>
+                <h2 class="recommendations__title">Сувениры</h2>
+                <p class="recommendations__text">
+                  Не только китайского,<br> но и настоящего местного<br> производства!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="reasons__row">
+          <div class="container">
+            <div class="reasons__row-content">
+              <div class="reasons__row-photo reasons__row-photo-reverse">
+                <span class="visually-hidden">Фото Гранд-Каньона</span>
+              </div>
+              <div class="reasons__row-blue reasons__row-blue-reverse">
+                <h2 class="reasons__row-title">Там есть<br> мост дьявола</h2>
+                <p class="reasons__row-number">&ndash; №2 &ndash;</p>
+                <p class="reasons__row-text">
+                  Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__squares">
+          <div class="container">
+            <ul class="reasons__squares-list">
+              <li class="reasons__squares-item reasons__squares--lighter">
+                <h2 class="reasons__row-title">Небольшая <br>площадь</h2>
+                <p class="reasons__row-number">&ndash; №3 &ndash;</p>
+                <p class="reasons__row-text">
+                  Все достопримечательности<br> находятся очень близко
+                </p>
+              </li>
+              <li class="reasons__squares-item reasons__squares--light">
+                <h2 class="reasons__row-title">Красивая <br>дорога</h2>
+                <p class="reasons__row-number">&ndash; №4 &ndash;</p>
+                <p class="reasons__row-text">
+                  Ехать в Седону из Лас-Вегаса<br> совсем не скучно!
+                </p>
+              </li>
+              <li class="reasons__squares-item reasons__squares--lighter">
+                <h2 class="reasons__row-title">Мало <br>туристов</h2>
+                <p class="reasons__row-number">&ndash; №4 &ndash;</p>
+                <p class="reasons__row-text">
+                  Большинство едет в Гранд<br> Каньон и толпится там
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <section class="subscribe subscribe-white">
-      <div class="subscribe__content">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="subscribe__caption">Подпишитесь на рассылку</p>
-        <p class="subscribe__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe__form-input" type="email" name="email" value="" placeholder="Ваш e-mail">
-          <input class="subscribe__form-submit" type="submit" name="submit" value="Подписаться">
-        </form>
-      </div>
-    </section>
+      <section class="search">
+        <div class="search__content">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <p class="search__caption">Заинтересовались?</p>
+          <p class="search__text">Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="search__link" href="#">Поиск гостиницы в Седоне</a>
+        </div>
+      </section>
+
+      <section class="subscribe subscribe-white">
+        <div class="subscribe__content">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p class="subscribe__caption">Подпишитесь на рассылку</p>
+          <p class="subscribe__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscribe__form-input" type="email" name="email" value="" placeholder="Ваш e-mail">
+            <input class="subscribe__form-submit" type="submit" name="submit" value="Подписаться">
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <div class="container">

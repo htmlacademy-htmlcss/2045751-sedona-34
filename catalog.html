@@ -8,11 +8,11 @@
   </head>
   <body>
 
-   <header class="page-header">
+    <header class="page-header">
       <div class="container">
         <div class="page-header__content">
           <div class="page-header__logo">
-            <a class="page-header__logo-link" href="#">
+            <a class="page-header__logo-link" href="index.html">
               <img class="page-header__logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
             </a>
           </div>
@@ -29,21 +29,23 @@
               </li>
             </ul>
           </nav>
-          <ul class="nav__list nav__list-user">
-            <li class="nav__item">
-              <a class="nav__link" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">
-                <span class="visually-hidden">Поставить лайк</span>
-              </a>
-            </li>
-            <li class="nav__item nav__item-user">
-              <a class="nav__link nav__link-button" href="#">Кнопка</a>
-            </li>
-          </ul>
+          <div class="user-menu">
+            <ul class="user-menu__list">
+              <li class="user-menu__item">
+                <a class="user-menu__link user-menu__link-search" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link user-menu__link-favorite" href="#">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </a>
+              </li>
+              <li class="user-menu__button">
+                <a class="user-menu__link user-menu__button-link" href="#">Кнопка</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
