@@ -165,6 +165,10 @@ body {
   flex-grow: 1;
 }
 
+.catalog {
+  flex-grow: 1;
+}
+
 .reasons__title {
   font-weight: 700px;
   font-size: 30px;
@@ -357,6 +361,7 @@ body {
 .subscribe__caption-white {
   color: #000000;
 }
+
 .subscribe__text {
   font-weight: 400;
   font-size: 22px;
@@ -381,10 +386,23 @@ body {
   cursor: pointer;
 }
 
+.page-footer__content {
+  width: 1060px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .page-footer__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 107px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .address {
@@ -407,6 +425,11 @@ body {
   background-size: 100% auto;
 }
 
+.catalog__header-content {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .catalog__header-title {
   margin: 0;
   font-weight: 700;
@@ -422,6 +445,22 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  list-style: none;
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+}
+
+.filters-infrastructure {
+  width: 150px;
+}
+
+.filters-type-housing {
+  width: 146px;
 }
 
 .filters-controls {
@@ -442,10 +481,76 @@ body {
   color: #ffffff;
 }
 
+.catalog__hotels-content {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog__hotels-sort {
+  height: 48px;
+  display: flex;
+}
+
+.catalog__hotels-text {
+  margin: 0;
+  margin-right: 191px;
+  margin-top: 5px;
+}
+
+.catalog__hotels-list-view {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.catalog__hotels-view-table {
+  width: 48px;
+  height: 100%;
+  display: block;
+  background-image: url(../images/catalog-hotels/catalog-view-table.svg);
+  background-repeat: no-repeat;
+}
+
+.catalog__hotels-view-large {
+  width: 48px;
+  height: 100%;
+  display: block;
+  background-image: url(../images/catalog-hotels/catalog-view-large.svg);
+  background-repeat: no-repeat;
+}
+
+.catalog__hotels-view-list {
+  width: 48px;
+  height: 100%;
+  display: block;
+  background-image: url(../images/catalog-hotels/catalog-view-list.svg);
+  background-repeat: no-repeat;
+}
+
+.catalog__hotels-products {
+  outline: 1px solid red;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.catalog__hotels-products ul:nth-child(3n + 1) {
+  margin-left: 20px;
+}
+
+.catalog__hotels-products ul:nth-child(3n + 3) {
+  margin-right: 20px;
+}
 .catalog__hotels-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 300px;
+  margin-right: 58px;
 }
 
 .catalog__hotels-text {
@@ -456,8 +561,32 @@ body {
 }
 
 .catalog__hotels-link {
+  position: relative;
   text-decoration: none;
   color: #000000;
+  display: block;
+  height: 211px;
+
+}
+
+.catalog__hotels-link-amara {
+  background-image: url(../images/catalog-hotels/amara-hotel.jpg);
+  background-repeat: no-repeat;
+}
+
+.catalog__hotels-link-diablo {
+  background-image: url(../images/catalog-hotels/poco-diablo-hotel.jpg);
+  background-repeat: no-repeat;
+}
+
+.catalog__hotels-link-desert {
+  background-image: url(../images/catalog-hotels/desert-quail-hotel.jpg);
+  background-repeat: no-repeat;
+}
+
+.catalog__hotels-link-green {
+  background-image: url(../images/catalog-hotels/green-tree-hotel.jpg);
+  background-repeat: no-repeat;
 }
 
 .catalog__hotels-name {
@@ -465,6 +594,9 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
 }
 
 .rating-result {
@@ -501,16 +633,29 @@ body {
   list-style: none;
 }
 
+.pagination {
+  display: flex;
+}
+
 .pagination-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination-item {
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 55px;
+  width: 55px;
+  height: 55px;
+  background-color: #82B3D3;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
 }
 
 .subscribe-white {
