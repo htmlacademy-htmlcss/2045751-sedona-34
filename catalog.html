@@ -7,9 +7,8 @@
     <title>Каталог</title>
   </head>
   <body>
-
-    <header class="page-header">
-      <div class="container">
+    <div class="container">
+      <header class="page-header">
         <div class="page-header__content">
           <div class="page-header__logo">
             <a class="page-header__logo-link" href="index.html">
@@ -47,12 +46,10 @@
             </ul>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="catalog">
-      <header class="catalog__header">
-        <div class="container">
+      <main class="catalog">
+        <header class="catalog__header">
           <div class="catalog__header-content">
             <h1 class="catalog__header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
@@ -132,12 +129,10 @@
               </div>
             </form>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <section class="catalog__hotels">
-        <h2 class="visually-hidden">Каталог гостиниц</h2>
-        <div class="container">
+        <section class="catalog__hotels">
+          <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="catalog__hotels-content">
             <div class="catalog__hotels-sort">
               <p class="catalog__hotels-text">
@@ -203,8 +198,6 @@
                     Рейтинг: <output class="rating-result-output">8.5</output>
                   </span>
                 </li>
-              </ul>
-              <ul class="catalog__hotels-list">
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-diablo" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы Villas at Poco Diablo</span>
@@ -240,8 +233,6 @@
                     Рейтинг: <output class="rating-result-output">9.2</output>
                   </span>
                 </li>
-              </ul>
-              <ul class="catalog__hotels-list">
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-desert" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы Desert Quail Inn</span>
@@ -274,8 +265,6 @@
                     Рейтинг: <output class="rating-result-output">6.9</output>
                   </span>
                 </li>
-              </ul>
-              <ul class="catalog__hotels-list">
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-green" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы GreenTree Inn</span>
@@ -336,24 +325,22 @@
               </select>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="subscribe subscribe-white">
-        <div class="subscribe__content">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="subscribe__caption subscribe__caption-white">Подпишитесь на рассылку</p>
-          <p class="subscribe__text subscribe__text-white">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe__form-input" type="email" name="email" value="" placeholder="Ваш e-mail">
-            <input class="subscribe__form-submit" type="submit" name="submit" value="Подписаться">
-          </form>
-        </div>
-      </section>
-    </main>
+        <section class="subscribe subscribe-white">
+          <div class="subscribe__content">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p class="subscribe__caption subscribe__caption-white">Подпишитесь на рассылку</p>
+            <p class="subscribe__text subscribe__text-white">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="subscribe__form-input" type="email" name="email" value="" placeholder="Ваш e-mail">
+              <input class="subscribe__form-submit" type="submit" name="submit" value="Подписаться">
+            </form>
+          </div>
+        </section>
+      </main>
 
-    <footer class="page-footer">
-      <div class="container">
+      <footer class="page-footer">
         <div class="page-footer__content">
           <div class="page-footer__socials">
             <ul class="page-footer__list">
@@ -386,7 +373,7 @@
             </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
