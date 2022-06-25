@@ -593,8 +593,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 300px;
-  margin-right: 58px;
 }
 
 .catalog__hotels-text {
@@ -609,26 +607,19 @@ body {
 }
 
 .catalog__hotels-products {
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .catalog__hotels-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.catalog__hotels-item {
-  margin-right: 58px;
-  margin-bottom: 20px;
-}
-
-.catalog__hotels-list li:nth-child(3n + 1) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 58px;
+  row-gap: 30px;
   margin-left: 20px;
 }
 
-.catalog__hotels-list li:nth-child(3n + 3) {
-  margin-right: 20px;
+.catalog__hotels-list {
+  width: 300px;
 }
 
 .catalog__hotels-link {
@@ -691,7 +682,6 @@ body {
 .catalog__hotels-more-favorite {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
 }
 
 .catalog__hotels-button {
