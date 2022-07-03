@@ -611,6 +611,7 @@ body {
 }
 
 .catalog__hotels-list {
+  width: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 58px;
@@ -618,14 +619,8 @@ body {
   margin-left: 20px;
 }
 
-.catalog__hotels-list {
-  width: 300px;
-}
-
 .catalog__hotels-link {
-  position: relative;
   text-decoration: none;
-  color: #000000;
   display: block;
   width: 300px;
   height: 211px;
@@ -651,19 +646,20 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog__hotels-name-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .catalog__hotels-name {
   margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  position: absolute;
-  left: 0;
-  bottom: -40px;
 }
 
 .catalog__hotels-info {
   margin: 0;
-  margin-top: 60px;
   margin-bottom: 16px;
 }
 
