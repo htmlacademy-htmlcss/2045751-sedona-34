@@ -836,10 +836,24 @@ body {
   fill: #83B3D3;
 }
 
-.page-footer__socials-img:hover {
+.page-footer__socials-img:hover,
+.page-footer__socials-img:focus{
   fill: #68A2CA;
 }
 
 .page-footer__socials-img:active {
   fill: rgba(104, 162, 202, 0.3);
+}
+
+.page-footer__logo-img {
+  fill: #000000;
+}
+
+.page-footer__logo-img:hover,
+.page-footer__logo-img:focus {
+  fill: #756157;
+}
+
+.page-footer__logo-img:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
