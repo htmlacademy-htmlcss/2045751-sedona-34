@@ -614,9 +614,26 @@ body {
 
 .catalog__hotels-text {
   margin: 0;
-  margin-right: 191px;
+  min-width: 338px;
   margin-top: 5px;
-  width: 480px;
+  margin-right: 191px;
+}
+
+.catalog__hotels-sort-select {
+  width: 287px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding-left: 19px;
+  appearance: none;
+  background-image: url(../images/catalog-sort-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  cursor: pointer;
 }
 
 .catalog__hotels-list-view {
@@ -624,33 +641,41 @@ body {
   padding: 0;
   list-style: none;
   width: 160px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8px;
   margin-left: auto;
 }
 
-.catalog__hotels-view-table {
-  width: 48px;
+.catalog__hotels-item-view {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.catalog__hotels-item-view:hover,
+.catalog__hotels-item-view:active {
+  border: 2px solid #000000;
+}
+
+.catalog__hotels-item-view--selected {
+  border: 2px solid #000000;
+}
+
+.catalog__hotels-link-view {
   height: 100%;
   display: block;
-  background-image: url(../images/catalog-hotels/catalog-view-table.svg);
-  background-repeat: no-repeat;
+}
+
+.catalog__hotels-view-table {
+  background: url(../images/catalog-hotels/catalog-view-table.svg) no-repeat 50%;
 }
 
 .catalog__hotels-view-large {
-  width: 48px;
-  height: 100%;
-  display: block;
-  background-image: url(../images/catalog-hotels/catalog-view-large.svg);
-  background-repeat: no-repeat;
+  background: url(../images/catalog-hotels/catalog-view-large.svg) no-repeat 50%;
 }
 
 .catalog__hotels-view-list {
-  width: 48px;
-  height: 100%;
-  display: block;
-  background-image: url(../images/catalog-hotels/catalog-view-list.svg);
-  background-repeat: no-repeat;
+  background: url(../images/catalog-hotels/catalog-view-list.svg) no-repeat 50%;
 }
 
 .catalog__hotels-list {
@@ -688,6 +713,14 @@ body {
   display: block;
   width: 300px;
   height: 211px;
+  margin-bottom: 16px;
+}
+
+.catalog__hotels-name-link {
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .catalog__hotels-link-amara {
@@ -708,11 +741,6 @@ body {
 .catalog__hotels-link-green {
   background-image: url(../images/catalog-hotels/green-tree-hotel.jpg);
   background-repeat: no-repeat;
-}
-
-.catalog__hotels-name-link {
-  text-decoration: none;
-  color: #000000;
 }
 
 .catalog__hotels-name {
@@ -742,6 +770,7 @@ body {
 .catalog__hotels-more-favorite {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .catalog__hotels-button {
@@ -764,14 +793,55 @@ body {
   background-color: #756157;
 }
 
+.catalog__hotels-more:hover,
+.catalog__hotels-more:focus {
+  background-color: #615048;
+}
+
+.catalog__hotels-more:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog__hotels-favourites {
   background-color: #82B3D3;
+}
+
+.catalog__hotels-favourites:hover,
+.catalog__hotels-favourites:focus {
+  background-color: #68A2CA;
+}
+
+.catalog__hotels-favourites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog__hotels__ratings {
+  width: 100%;
+  height: 37px;
+  display: flex;
+  align-items: center;
 }
 
 .rating-stars-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 140px;
+  display: flex;
+}
+
+.rating-stars-item {
+  width: 18px;
+  height: 18px;
+  background: url(../images/catalog-hotels/star.svg) no-repeat;
+  padding-right: 6px;
+}
+
+.rating-result {
+  width: 160px;
+  text-align: center;
 }
 
 .pagination {
