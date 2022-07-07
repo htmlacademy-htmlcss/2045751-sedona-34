@@ -121,29 +121,29 @@ body {
 
 .user-menu__link-search {
   width: 42px;
-  height: 100%;
+  min-height: 42px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .user-menu__link-favorite {
-  height: 100%;
   width: 42px;
+  min-height: 42px;
   position: relative;
   background-image: url(../images/favorite.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  position: relative;
 }
 
-.user-menu__link-favorite::before {
-  content: "12";
+.user-menu__link-favorite-count {
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 10px;
   background-color: #7DB54F;
-  right: -2px;
+  right: 0;
   top: 0;
   color: #ffffff;
   font-style: normal;
