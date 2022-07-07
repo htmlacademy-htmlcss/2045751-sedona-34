@@ -30,13 +30,13 @@
           </nav>
           <div class="user-menu">
             <ul class="user-menu__list">
-              <li class="user-menu__item user-menu__item-search">
-                <a class="user-menu__link" href="#">
+              <li class="user-menu__item">
+                <a class="user-menu__link user-menu__link-search" href="#">
                   <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
-              <li class="user-menu__item user-menu__item-favorite">
-                <a class="user-menu__link" href="#">
+              <li class="user-menu__item">
+                <a class="user-menu__link user-menu__link-favorite" href="#">
                   <span class="visually-hidden">Поставить лайк</span>
                 </a>
               </li>
@@ -315,23 +315,28 @@
             <div class="pagination">
               <ul class="pagination-list">
                 <li class="visually-hidden">Постраничная навигация</li>
-                <li class="pagination-item pagination-item-active">1</li>
-                <li class="pagination-item">2</li>
-                <li class="pagination-item">3</li>
-                <li class="pagination-item">4</li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-link-active">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
                 <li class="pagination-item pagination-item-more">
                   <span class="visually-hidden">Показать еще страницы</span>
-                  ...
+                  <a class="pagination-link" href="#">...</a>
                 </li>
-                <li class="visually-hidden pagination-item pagination-item-hidden">5</li>
-                <li class="visually-hidden pagination-item pagination-item-hidden">6</li>
-                <li class="visually-hidden pagination-item pagination-item-hidden">7</li>
-                <li class="visually-hidden pagination-item pagination-item-hidden">8</li>
-                <li class="visually-hidden pagination-item pagination-item-hidden">9</li>
-                <li class="pagination-item">10</li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
               </ul>
               <div class="catalog__hotels-quantity">
-                <label for="catalog__hotels-quantity">Гостиниц на странице</label>
+                <label for="catalog__hotels-quantity">Гостиниц на странице:</label>
                 <select  id="catalog__hotels-quantity" class="catalog__hotels-quantity-select">
                   <option value="one">1</option>
                   <option value="two">2</option>
