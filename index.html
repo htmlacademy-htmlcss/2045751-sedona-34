@@ -250,8 +250,52 @@
           </button>
         </div>
         <form class="modal__form"  action="#" method="POST">
-          <label for="date-entry" class="modal__form-label">Дата заезда:</label>
-          <input class="date-entry" id="date-entry" type="date" name="date-entry">
+          <label class="modal__form-label modal__form-label-entry">
+            Дата заезда:
+            <input class="date-input" type="date" name="date-entry">
+            <span class="modal__form-message modal__form-message--red">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="modal__form-label modal__form-label-departure">
+            Дата выезда:
+            <input class="date-input" type="date" name="date-departure">
+            <span class="modal__form-message">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+          <div class="number-people">
+            <div class="number-people-adult">
+              <label class="modal__form-label modal__form-label-count">
+                Взрослые:
+                <input class="number-people-input" type="text" name="number-people-adult" value="2">
+                <a class="number-people-link number-people-plus" href="#">
+                  <span class="visually-hidden">Знак плюс добавить взрослых</span>
+                </a>
+                <a class="number-people-link number-people-minus" href="#">
+                  <span class="visually-hidden">Знак минус удалить взрослых</span>
+                </a>
+              </label>
+            </div>
+            <div class="number-people-child">
+              <label class="modal__form-label modal__form-label-count modal__form-label-child">
+                Дети:
+                <input class="number-people-input" type="text" name="number-people-child" value="1">
+                <a class="number-people-link number-people-plus" href="#">
+                  <span class="visually-hidden">Знак плюс добавить детей</span>
+                </a>
+                <a class="number-people-link number-people-minus" href="#">
+                  <span class="visually-hidden">Знак минус удалить взрослых</span>
+                </a>
+              </label>
+              <div class="tooltip">
+                <p>Укажите количество детей,
+                которые будут с вами, возраст
+                которых от 6 до 18 лет. Дети до 6 лет размещаются
+                бесплатно.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="modal__form-button" href="#">
+            Найти
+          </a>
         </form>
       </div>
     </div>
