@@ -1119,6 +1119,9 @@ body {
   outline: none;
   border: 0;
   background-color: #F2F2F2;
+  background-image: url(../images/input-date.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
   border-radius: 4px;
   padding-left: 19px;
   padding-right: 19px;
@@ -1127,6 +1130,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .modal__form-message {
@@ -1196,6 +1200,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  padding-left: 40px;
+  padding-right: 40px;
+  word-break: break-all;
 }
 
 .modal__form-label-child {
@@ -1206,12 +1213,13 @@ body {
   position: relative;
 }
 
-.number-people-link {
-  display: block;
-  width: 15px;
-  height: 15px;
+.number-people-button {
+  width: 30px;
+  height: 30px;
+  border: 0;
   text-decoration: none;
   position: absolute;
+  cursor: pointer;
 }
 
 .number-people-plus {
@@ -1219,7 +1227,7 @@ body {
   top: 17px;
   background-image: url(../images/modal-plus.svg);
   background-repeat: no-repeat;
-  background-position: 1px 0;
+  background-position: 16px 1px;
 }
 
 .number-people-minus {
@@ -1227,11 +1235,11 @@ body {
   top: 20px;
   background-image: url(../images/modal-minus.svg);
   background-repeat: no-repeat;
-  background-position: 0 4px;
+  background-position: 16px 4px;
 }
 
 .tooltip {
-  display: none;
+  display: block;
   min-width: 216px;
   background-color: #333333;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
