@@ -586,7 +586,7 @@ body {
   cursor: pointer;
 }
 
-.breadcrumbs-link-home, 
+.breadcrumbs-link-home,
 .breadcrumbs-link-home:focus{
   fill: #ffffff;
 }
@@ -620,7 +620,7 @@ body {
   margin-bottom: 15px;
 }
 
-.filters-label {
+.filters-label-checkbox {
   padding-left: 40px;
 }
 
@@ -662,10 +662,6 @@ body {
   background-image: url(../images/checkbox-active.svg);
 }
 
-
-
-
-
 .filters-infrastructure {
   width: 151px;
   margin-right: 70px;
@@ -673,6 +669,28 @@ body {
 
 .filters-type-housing {
   width: 146px;
+}
+
+.filters-label-radio {
+  padding-left: 40px;
+}
+
+.radio-input {
+  position: absolute;
+  appearance: none;
+}
+
+.radio {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/radio-off.svg);
+  background-repeat: no-repeat;
+  margin-left: -40px;
+}
+
+.radio-input:checked + .radio {
+  background-image: url(../images/radio-on.svg);
 }
 
 .filters-controls {
@@ -688,13 +706,65 @@ body {
   margin-bottom: 30px;
 }
 
+.filters-price__range-inputs {
+  display: flex;
+}
+
+.range-scale {
+  position: relative;
+  width: 288px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 32px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.range-button:hover {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-button:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-button:focus {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-button-min {
+  top: -8px;
+  left: 0;
+}
+
+.range-button-max {
+  top: -8px;
+  right: -15px;
+}
+
 .filters-legend-price {
   margin-bottom: 34px;
 }
 
 .filters-price {
   width: 288px;
-  display: flex;
   margin-right: 50px;
   margin-left: auto;
 }
@@ -907,7 +977,7 @@ body {
   cursor: pointer;
 }
 
-.catalog__hotels-list-view 
+.catalog__hotels-list-view
 .catalog__hotels-item-view:not(:nth-child(3n+3)) {
   margin-right: 8px;
 }

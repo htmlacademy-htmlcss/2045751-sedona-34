@@ -60,8 +60,8 @@
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Переход на главную</span>
                   <svg class="breadcrumbs-link-home" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="m.871 6.15 6-5.5 6 
-                    5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="m.871 6.15 6-5.5 6
+                    5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4
                     3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"/>
                   </svg>
                 </a>
@@ -80,21 +80,21 @@
                 <legend class="filters-legend">Инфраструктура:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
-                    <label class="filters-label">
+                    <label class="filters-label filters-label-checkbox">
                       <input class="filters-input check-input" name="pool" type="checkbox" checked>
                       <span class="checkbox"></span>
                       Бассейн
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
+                    <label class="filters-label filters-label-checkbox">
                       <input class="filters-input check-input" name="parking" type="checkbox" checked>
                       <span class="checkbox"></span>
                       Парковка
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
+                    <label class="filters-label filters-label-checkbox">
                       <input class="ilters-input check-input" name="wi-fi" type="checkbox">
                       <span class="checkbox"></span>
                       Wi-Fi
@@ -106,20 +106,23 @@
                 <legend class="filters-legend">Тип жилья:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="type-housing" type="radio" value="hotel" checked>
+                    <label class="filters-label filters-label-radio">
+                      <input class="filters-input radio-input" name="type-housing" type="radio" value="hotel" checked>
+                      <span class="radio"></span>
                       Гостиница
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="type-housing" type="radio" value="motel">
+                    <label class="filters-label filters-label-radio">
+                      <input class="filters-input radio-input" name="type-housing" type="radio" value="motel">
+                      <span class="radio"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="type-housing" type="radio" value="apartments">
+                    <label class="filters-label filters-label-radio">
+                      <input class="filters-input radio-input" name="type-housing" type="radio" value="apartments">
+                      <span class="radio"></span>
                       Апартаменты
                     </label>
                   </li>
@@ -127,10 +130,25 @@
               </fieldset>
               <fieldset class="filters-controls filters-price">
                 <legend class="filters-legend filters-legend-price">Стоимость, ₽:</legend>
-                <input id="filters-price__input-from" class="filters-price__input filters-price__input-from" type="text" value="0">
-                <label class="filters-price__input-text filters-price__input-label-from" for="filters-price__input-from">от</label>
-                <input id="filters-price__input-to" class="filters-price__input filters-price__input-to" type="text" value="9000">
-                <label class="filters-price__input-text filters-price__input-label-to" for="filters-price__input-to">до</label>
+                <div class="filters-price__range">
+                  <div class="filters-price__range-inputs">
+                    <input id="filters-price__input-from" class="filters-price__input filters-price__input-from" type="text" value="0">
+                    <label class="filters-price__input-text filters-price__input-label-from" for="filters-price__input-from">от</label>
+                    <input id="filters-price__input-to" class="filters-price__input filters-price__input-to" type="text" value="9000">
+                    <label class="filters-price__input-text filters-price__input-label-to" for="filters-price__input-to">до</label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 227px">
+                      <button class="range-button range-button-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-button range-button-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
               </fieldset>
               <div class="filters__buttons">
                 <button class="filters-button-apply" type="submit">Применить</button>
