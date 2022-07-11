@@ -39,6 +39,9 @@
               <li class="user-menu__item">
                 <a class="user-menu__link user-menu__link-favorite" href="#">
                   <span class="visually-hidden">Поставить лайк</span>
+                  <span class="user-menu__link-favorite-count">
+                    <output>12</output>
+                  </span>
                 </a>
               </li>
               <li class="user-menu__button">
@@ -57,14 +60,18 @@
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Переход на главную</span>
-                  <img src="images/home.svg" width="12" height="12" alt="Иконка домика для перехода на главную страницу">
+                  <svg class="breadcrumbs-link-home" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="m.871 6.15 6-5.5 6
+                    5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4
+                    3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"/>
+                  </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
                 <img src="images/arrow.svg" width="5" height="8" alt="Стрелка указывает на главную страницу">
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">
+                <a class="breadcrumbs-link" tabindex="0">
                   Гостиницы
                 </a>
               </li>
@@ -74,20 +81,23 @@
                 <legend class="filters-legend">Инфраструктура:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="pool" type="checkbox" checked>
+                    <label class="filters-label filters-label-checkbox">
+                      <input class="filters-input check-input" name="pool" type="checkbox" checked>
+                      <span class="checkbox"></span>
                       Бассейн
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="parking" type="checkbox" checked>
+                    <label class="filters-label filters-label-checkbox">
+                      <input class="filters-input check-input" name="parking" type="checkbox" checked>
+                      <span class="checkbox"></span>
                       Парковка
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="ilters-input" name="wi-fi" type="checkbox">
+                    <label class="filters-label filters-label-checkbox">
+                      <input class="ilters-input check-input" name="wi-fi" type="checkbox">
+                      <span class="checkbox"></span>
                       Wi-Fi
                     </label>
                   </li>
@@ -97,20 +107,23 @@
                 <legend class="filters-legend">Тип жилья:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="type-housing" type="radio" value="hotel" checked>
+                    <label class="filters-label filters-label-radio">
+                      <input class="filters-input radio-input" name="type-housing" type="radio" value="hotel" checked>
+                      <span class="radio"></span>
                       Гостиница
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="type-housing" type="radio" value="motel">
+                    <label class="filters-label filters-label-radio">
+                      <input class="filters-input radio-input" name="type-housing" type="radio" value="motel">
+                      <span class="radio"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="filters-item">
-                    <label class="filters-label">
-                      <input class="filters-input" name="type-housing" type="radio" value="apartments">
+                    <label class="filters-label filters-label-radio">
+                      <input class="filters-input radio-input" name="type-housing" type="radio" value="apartments">
+                      <span class="radio"></span>
                       Апартаменты
                     </label>
                   </li>
@@ -118,15 +131,29 @@
               </fieldset>
               <fieldset class="filters-controls filters-price">
                 <legend class="filters-legend filters-legend-price">Стоимость, ₽:</legend>
-                <input class="filters-price" id="price-from" type="text" value="0">
-                <label class="filters-label" for="price-from">от</label>
-                <input class="filters-price" id="price-to" type="text" value="9000">
-                <label class="filters-label" for="price-to">до</label>
-                <input class="filters-range" type="range" min="0" max="9000" step="1">
+                <div class="filters-price__range">
+                  <div class="filters-price__range-inputs">
+                    <input id="filters-price__input-from" class="filters-price__input filters-price__input-from" type="text" value="0">
+                    <label class="filters-price__input-text filters-price__input-label-from" for="filters-price__input-from">от</label>
+                    <input id="filters-price__input-to" class="filters-price__input filters-price__input-to" type="text" value="9000">
+                    <label class="filters-price__input-text filters-price__input-label-to" for="filters-price__input-to">до</label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 227px">
+                      <button class="range-button range-button-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-button range-button-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
               </fieldset>
               <div class="filters__buttons">
-                <button class="filters-button" type="submit">Применить</button>
-                <input class="filters-reset" type="reset">
+                <button class="filters-button-apply" type="submit">Применить</button>
+                <button class="filters-button-reset" type="button">Сбросить</button>
               </div>
             </form>
           </div>
@@ -144,23 +171,17 @@
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-              <ul class="catalog__hotels-list-view">
-                <li class="catalog__hotels-item-view catalog__hotels-view-table catalog__hotels-item-view--selected">
-                  <a class="catalog__hotels-link-view" href="#">
-                    <span class="visually-hidden">Показать содержимое таблицей</span>
-                  </a>
-                </li>
-                <li class="catalog__hotels-item-view catalog__hotels-view-large">
-                  <a class="catalog__hotels-link-view" href="#">
-                    <span class="visually-hidden">Показать содержимое крупно</span>
-                  </a>
-                </li>
-                <li class="catalog__hotels-item-view catalog__hotels-view-list">
-                  <a class="catalog__hotels-link-view" href="#">
+              <div class="catalog__hotels-list-view">
+                <button class="catalog__hotels-item-view catalog__hotels-view-table catalog__hotels-item-view--selected" type="button">
+                  <span class="visually-hidden">Показать содержимое таблицей</span>
+                </button>
+                <button class="catalog__hotels-item-view catalog__hotels-view-large" type="button">
+                  <span class="visually-hidden">Показать содержимое крупно</span>
+                </button>
+                <button class="catalog__hotels-item-view catalog__hotels-view-list" type="button">
                     <span class="visually-hidden">Показать содержимое списком</span>
-                  </a>
-                </li>
-              </ul>
+                </button>
+              </div>
             </div>
             <div class="catalog__hotels-products">
               <ul class="catalog__hotels-list">
