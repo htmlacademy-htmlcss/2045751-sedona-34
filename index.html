@@ -37,6 +37,9 @@
               <li class="user-menu__item">
                 <a class="user-menu__link user-menu__link-favorite" href="#">
                   <span class="visually-hidden">Поставить лайк</span>
+                  <span class="user-menu__link-favorite-count">
+                    <output>12</output>
+                  </span>
                 </a>
               </li>
               <li class="user-menu__button">
@@ -236,6 +239,64 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-container modal-container--show">
+      <div class="modal">
+        <div class="modal__caption">
+          <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <button class="modal__close">
+            <span class="visually-hidden">Кнопка закрыть модальное окно</span>
+          </button>
+        </div>
+        <form class="modal__form"  action="#" method="get">
+          <label class="modal__form-label modal__form-label-entry">
+            Дата заезда:
+            <input class="date-input" type="text" name="date-entry" value="27 апреля 2020">
+            <span class="modal__form-message modal__form-message--red">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="modal__form-label modal__form-label-departure">
+            Дата выезда:
+            <input class="date-input" type="text" name="date-departure" value="1 сентября 2021">
+            <span class="modal__form-message">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+          <div class="number-people">
+            <div class="number-people-adult">
+              <label class="modal__form-label modal__form-label-count">
+                Взрослые:
+                <input class="number-people-input" type="text" name="number-people-adult" value="2">
+                <button class="number-people-button number-people-plus">
+                  <span class="visually-hidden">Знак плюс добавить взрослых</span>
+                </button>
+                <button class="number-people-button number-people-minus">
+                  <span class="visually-hidden">Знак минус удалить взрослых</span>
+                </button>
+              </label>
+            </div>
+            <div class="number-people-child">
+              <label class="modal__form-label modal__form-label-count modal__form-label-child">
+                Дети:
+                <input class="number-people-input" type="text" name="number-people-child" value="1">
+                <button class="number-people-button number-people-plus">
+                  <span class="visually-hidden">Знак плюс добавить детей</span>
+                </button>
+                <button class="number-people-button number-people-minus">
+                  <span class="visually-hidden">Знак минус удалить взрослых</span>
+                </button>
+              </label>
+              <div class="tooltip">
+                <p>Укажите количество детей,
+                которые будут с вами, возраст
+                которых от 6 до 18 лет. Дети до 6 лет размещаются
+                бесплатно.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="modal__form-button" href="#">
+            Найти
+          </a>
+        </form>
+      </div>
     </div>
   </body>
 </html>
