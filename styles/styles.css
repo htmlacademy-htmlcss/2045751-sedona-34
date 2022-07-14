@@ -282,6 +282,7 @@ body {
 
 .reasons__row-text {
   margin: 0;
+  color: #333333;
 }
 
 .reasons__row-photo-reverse {
@@ -388,6 +389,7 @@ body {
 
 .recommendations__text {
   margin: 0;
+  color: #333333;
 }
 
 .search__content {
@@ -593,7 +595,7 @@ body {
 }
 
 .breadcrumbs-link-home,
-.breadcrumbs-link-home:focus{
+.breadcrumbs-link-home:focus {
   fill: #ffffff;
 }
 
@@ -794,6 +796,7 @@ body {
   width: 144px;
   height: 48px;
   box-sizing: border-box;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -872,6 +875,7 @@ body {
   min-height: 48px;
   border: 0;
   outline: none;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -905,6 +909,7 @@ body {
   border: 0;
   outline: none;
   background-color: rgba(255, 255, 255, 0);
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1003,11 +1008,11 @@ body {
   margin-right: 8px;
 }
 
-.catalog__hotels-item-view:hover{
+.catalog__hotels-item-view:hover {
   border: 2px solid #000000;
 }
 
-.catalog__hotels-item-view:focus{
+.catalog__hotels-item-view:focus {
   border: 2px solid #68A2CA;
 }
 
@@ -1079,26 +1084,6 @@ body {
   color: #000000;
 }
 
-.catalog__hotels-link-amara {
-  background-image: url(../images/catalog-hotels/amara-hotel.jpg);
-  background-repeat: no-repeat;
-}
-
-.catalog__hotels-link-diablo {
-  background-image: url(../images/catalog-hotels/poco-diablo-hotel.jpg);
-  background-repeat: no-repeat;
-}
-
-.catalog__hotels-link-desert {
-  background-image: url(../images/catalog-hotels/desert-quail-hotel.jpg);
-  background-repeat: no-repeat;
-}
-
-.catalog__hotels-link-green {
-  background-image: url(../images/catalog-hotels/green-tree-hotel.jpg);
-  background-repeat: no-repeat;
-}
-
 .catalog__hotels-name {
   margin: 0;
   font-weight: 700;
@@ -1109,6 +1094,7 @@ body {
 .catalog__hotels-info {
   margin: 0;
   margin-bottom: 16px;
+  color: #333333;
 }
 
 .catalog__hotels-info-text {
@@ -1122,7 +1108,6 @@ body {
 }
 
 .catalog__hotels-button {
-  background-color:#82B3D3;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -1162,6 +1147,20 @@ body {
 
 .catalog__hotels-favourites:active {
   background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog__hotels-favourites--green {
+  background-color: #7DB54F;
+}
+
+.catalog__hotels-favourites--green:hover, 
+.catalog__hotels-favourites--green:focus {
+  background-color: #6C9E42;
+}
+
+.catalog__hotels-favourites--green:active {
+  background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1272,6 +1271,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #333333;
 }
 
 .catalog__hotels-quantity-select {
@@ -1286,6 +1286,12 @@ body {
   background-repeat: no-repeat;
   background-position: 85% 50%;
   cursor: pointer;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .subscribe-white {
@@ -1354,7 +1360,7 @@ body {
   display: none;
   left: 0;
   top: 0;
-  background-color: rgba(242, 242, 242, 0.8);;
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
@@ -1529,7 +1535,7 @@ body {
   color: #ffffff;
 }
 
-.number-people-child:hover:before{
+.number-people-child:hover:before {
   background-color: #68A2CA;
 }
 
@@ -1548,7 +1554,7 @@ body {
   line-height: 21px;
   padding-left: 18px;
   padding-right: 18px;
-  font-family: "PT Sans"
+  font-family: "PT Sans";
 }
 
 .modal__form-label-child {
@@ -1689,7 +1695,7 @@ body {
 
 .modal__form-button:active {
   background-color: #68A2CA;
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal__form-button:focus {
