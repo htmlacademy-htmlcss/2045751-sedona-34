@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
     <title>Каталог</title>
   </head>
   <body>
@@ -65,9 +65,6 @@
                     3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"/>
                   </svg>
                 </a>
-              </li>
-              <li class="breadcrumbs-item">
-                <img src="images/arrow.svg" width="5" height="8" alt="Стрелка указывает на главную страницу">
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" tabindex="0">
@@ -139,20 +136,19 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 227px">
-                      <button class="range-button range-button-min">
+                      <button class="range-button range-button-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-button range-button-max">
+                      <button class="range-button range-button-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
-
                 </div>
               </fieldset>
               <div class="filters__buttons">
                 <button class="filters-button-apply" type="submit">Применить</button>
-                <button class="filters-button-reset" type="button">Сбросить</button>
+                <button class="filters-button-reset" type="reset">Сбросить</button>
               </div>
             </form>
           </div>
@@ -187,6 +183,7 @@
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-amara" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы Amara Resort & Spa</span>
+                    <img src="images/catalog-hotels/amara-hotel.jpg" alt="Звездное небо и скалы">
                   </a>
                   <a class="catalog__hotels-name-link" href="#">
                     <p class="catalog__hotels-name">
@@ -195,7 +192,7 @@
                   </a>
                   <p class="catalog__hotels-info">
                     Гостиница
-                    <span class="catalog__hotels-info-text">от
+                    <span class="catalog__hotels-info-text">От
                       <output class="catalog__hotels-info-output">4000</output> ₽
                     </span>
                   </p>
@@ -226,6 +223,7 @@
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-diablo" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы Villas at Poco Diablo</span>
+                    <img src="images/catalog-hotels/poco-diablo-hotel.jpg" alt="Радуга над горами">
                   </a>
                   <a class="catalog__hotels-name-link" href="#">
                     <p class="catalog__hotels-name">
@@ -234,13 +232,13 @@
                   </a>
                   <p class="catalog__hotels-info">
                     Гостиница
-                    <span class="catalog__hotels-info-text">от
+                    <span class="catalog__hotels-info-text">От
                       <output class="catalog__hotels-info-output">5000</output> ₽
                     </span>
                   </p>
                   <div class="catalog__hotels-more-favorite">
-                    <a class="catalog__hotels-more catalog__hotels-button" href="#">Подробнее</a>
-                    <a class="catalog__hotels-favourites catalog__hotels-button" href="#">В избранное</a>
+                    <a class="catalog__hotels-button catalog__hotels-more" href="#">Подробнее</a>
+                    <a class="catalog__hotels-button catalog__hotels-favourites catalog__hotels-favourites--green" href="#">В избранное</a>
                   </div>
                   <div class="catalog__hotels__ratings">
                     <ul class="rating-stars-list">
@@ -265,6 +263,7 @@
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-desert" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы Desert Quail Inn</span>
+                    <img src="images/catalog-hotels/desert-quail-hotel.jpg" alt="Горы и голубое небо">
                   </a>
                   <a class="catalog__hotels-name-link" href="#">
                     <p class="catalog__hotels-name">
@@ -273,7 +272,7 @@
                   </a>
                   <p class="catalog__hotels-info">
                     Гостиница
-                    <span class="catalog__hotels-info-text">от
+                    <span class="catalog__hotels-info-text">От
                       <output class="catalog__hotels-info-output">2500</output> ₽
                     </span>
                   </p>
@@ -301,6 +300,7 @@
                 <li class="catalog__hotels-item">
                   <a class="catalog__hotels-link catalog__hotels-link-green" href="#">
                     <span class="visually-hidden">Фото для карточки гостиницы GreenTree Inn</span>
+                    <img src="images/catalog-hotels/green-tree-hotel.jpg" alt="Звездное небо над горами">
                   </a>
                   <a class="catalog__hotels-name-link" href="#">
                     <p class="catalog__hotels-name">
@@ -309,7 +309,7 @@
                   </a>
                   <p class="catalog__hotels-info">
                     Гостиница
-                    <span class="catalog__hotels-info-text">от
+                    <span class="catalog__hotels-info-text">От
                       <output class="catalog__hotels-info-output">1500</output> ₽
                     </span>
                   </p>
@@ -377,7 +377,7 @@
             <p class="subscribe__caption subscribe__caption-white">Подпишитесь на рассылку</p>
             <p class="subscribe__text subscribe__text-white">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscribe__form-input" type="email" name="email" value="" placeholder="Ваш e-mail">
+              <input class="subscribe__form-input" type="email" name="email" value="" placeholder="Ваш e-mail" required>
               <input class="subscribe__form-submit" type="submit" name="submit" value="Подписаться">
             </form>
           </div>
@@ -389,26 +389,33 @@
           <div class="page-footer__socials">
             <ul class="page-footer__list">
               <li class="page-footer__item">
-                <a class="page-footer__link" href="https://twitter.com/htmlacademy_ru">
-                  <span class="visually-hidden">Twitter</span>
-                  <svg class="page-footer__socials-img" aria-hidden="true" focusable="false" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path rule="evenodd" clip-rule="evenodd" d="M11.6.154c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9
-                    1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2-.2 6.8-3.3 11.2-10.6 11.1h-.5c-.4
-                    0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1-1.3-.8-2.7-1.6-2.6-3.8.3.3 1.1.5
-                    1.4.5-.8-.2-2.1-3.3-1-4.9 1.9 1.9 4 3.6 7.6 3.8.2-2.4 1.2-3.9 3.1-4.5Z"/>
+                <a class="page-footer__link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Vkontakte</span>
+                  <svg class="page-footer__socials-img" aria-hidden="true" focusable="false" width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.116.948c.166-.546 0-.948-.795-.948h-2.625c-.668
+                    0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167
+                    0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.817C9.4 0 9.15.304
+                    9.15.593c0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89
+                    0-3.055-3.211-4.34-6.885C5.116.288 4.865 0 4.193 0H1.566c-.75 0-.9.347-.9.73 0 .682.89
+                    4.07 4.145 8.551C6.981 12.341 10.036 14 12.82 14c1.67 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39
+                    0 1.057.192 2.615 1.667C19.776 13.216 20.07 14 21.071 14h2.625c.75 0
+                    1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71
+                    0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"/>
                   </svg>
                 </a>
               </li>
               <li class="page-footer__item">
-                <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">
-                  <span class="visually-hidden">Facebook</span>
-                  <svg class="page-footer__socials-img" aria-hidden="true" focusable="false" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path rule="evenodd" clip-rule="evenodd" d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
+                <a class="page-footer__link" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram</span>
+                  <svg class="page-footer__socials-img" aria-hidden="true" focusable="false" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.785.1.84 6.247c-1.088.438-1.08 1.045-.2 1.316L4.735 8.84l9.472-5.976c.448-.273.857-.126.52.172L7.053 
+                    9.962H7.05h.002l-.283 4.22c.414 0 .597-.19.829-.413l1.988-1.934 4.136 3.055c.762.42 1.31.204 
+                    1.5-.706L17.938 1.39C18.216.276 17.513-.229 16.785.1Z"/>
                   </svg>
                 </a>
               </li>
               <li class="page-footer__item">
-                <a class="page-footer__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <a class="page-footer__link" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                   <svg class="page-footer__socials-img" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0
@@ -422,9 +429,9 @@
             <a class="address__link" href="tel:+88128121212">+7 (812) 812-12-12</a>
           </address>
           <div class="page-footer__logo">
-            <a class="page-footer__logo-link" href="https://htmlacademy.ru/">
-              <svg class="page-footer__logo-img" tabindex="0" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.9v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6
+            <a class="page-footer__logo-link" href="https://htmlacademy.ru/" target="_blank" title="сайт htmlacademy">
+              <svg class="page-footer__logo-img" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.9v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6
                 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7
                 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4
                 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3
