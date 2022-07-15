@@ -526,7 +526,7 @@ body {
   background-color: #82B3D3;
   border: none;
   border-radius: 0px 10px 10px 0px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -815,7 +815,7 @@ body {
   width: 144px;
   height: 48px;
   box-sizing: border-box;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -894,7 +894,7 @@ body {
   min-height: 48px;
   border: 0;
   outline: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -928,7 +928,7 @@ body {
   border: 0;
   outline: none;
   background-color: rgba(255, 255, 255, 0);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1308,7 +1308,7 @@ body {
   background-repeat: no-repeat;
   background-position: 85% 50%;
   cursor: pointer;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1450,7 +1450,7 @@ body {
 .modal__close:hover {
   background-color: #E6E6E6;
 }
- 
+
 .modal__close:active {
   background-color: #E6E6E6;
   background-image: url(../images/modal-close-active.svg);
@@ -1503,7 +1503,7 @@ body {
   padding-left: 19px;
   padding-right: 19px;
   margin-bottom: 40px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1596,7 +1596,7 @@ body {
   line-height: 21px;
   padding-left: 18px;
   padding-right: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .modal__form-label-child {
