@@ -981,6 +981,7 @@ body {
   outline: none;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -999,13 +1000,12 @@ body {
   border: 2px solid #83B3D3;
 }
 
-.catalog__hotels-sort-select:active {
-  border: 2px solid #E6E6E6;
-  opacity: 0.3;
-}
-
 .catalog__hotels-sort-select:focus {
   border: 2px solid #68A2CA;
+}
+
+.catalog__hotels-sort-select:active {
+  border: 2px solid #3F5E72;
 }
 
 .catalog__hotels-list-view {
