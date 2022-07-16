@@ -1349,11 +1349,12 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 110px;
+  width: 200px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  margin-top: 13px;
   margin-left: 12px;
-  margin-top: 14px;
 }
 
 .page-footer__item {
@@ -1367,8 +1368,8 @@ body {
   font-style: normal;
   line-height: 40px;
   text-align: center;
-  margin-left: 23px;
-  margin-top: 14px;
+  margin-top: 10px;
+  margin-left: -68px;
 }
 
 .address__link:hover,
